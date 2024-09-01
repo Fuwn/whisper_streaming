@@ -74,7 +74,7 @@ async def audio_stream(websocket, path):
                     
                     if not silence_started:
                         o = online.finish()
-                    online.init()
+                        online.init()
 
                     silence_started = True
             else:
